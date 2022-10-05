@@ -83,7 +83,7 @@
 - localizer - вспомогательный класс, локализующий решения уравнения P(x) = 0
 	- [localizer.cpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_1/source/source/polynom/solver/localizer/localizer.cpp)
 	- [localizer.hpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_1/source/source/polynom/solver/localizer/localizer.hpp)
-- system - класс, отвечающий за запуск приложение и работу с доступными ресурсами
+- system - класс, отвечающий за запуск приложения и работу с доступными ресурсами
 	- [system.cpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_1/source/system/system.cpp)
 	- [system.hpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_1/source/system/system.hpp)
 - logger - класс, работающий с логом программы
