@@ -9,6 +9,8 @@ int main(int argc, char** argv)
 {
 	try
 	{
+		utility::Logger::write_system("Start System");
+
 		compmath::System().run();
 
 		system("pause");
@@ -17,7 +19,7 @@ int main(int argc, char** argv)
 	}
 	catch (const std::exception& e)
 	{
-		sentiment::Logger::write_error(e.what());
+		utility::Logger::write_error(e.what());
 
 		std::cerr << e.what() << std::endl;
 
@@ -27,7 +29,7 @@ int main(int argc, char** argv)
 	}
 	catch (...)
 	{
-		sentiment::Logger::write_error("unknown exception");
+		utility::Logger::write_error("unknown exception");
 
 		std::cerr << "unknown exception" << std::endl;
 

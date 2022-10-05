@@ -1,6 +1,6 @@
 #include "logger.hpp"
 
-namespace sentiment
+namespace utility
 {
 
 	void Logger::create_log_file()
