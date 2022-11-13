@@ -75,6 +75,44 @@ namespace compmath
 		}
 	}
 
+	void System::handle_user_inputs(const std::vector<polynom_t>& splines) const
+	{
+		try
+		{
+			std::string input;
+
+			std::cout << "\nInput params to count values using spline (print 'exit' to exit): \n>> ";
+			for (std::cin >> input; input != "exit"; std::cout << ">> ", std::cin >> input)
+			{
+				auto param = std::stod(input);
+				if (param < m_params[0] || param > m_params.back())
+				{
+					std::cout << "Wrong param. Please, input values between " << m_params[0] << " and " << m_params.back() << std::endl;
+					continue;
+				}
+
+				auto n = std::size(m_params) / 2;
+				for (; !(param <= m_params[n] && param >= m_params[n - 1]);)
+				{
+					if (param < m_params[n - 1])
+					{
+						n -= (std::size(m_params) - n) / 2;
+					}
+					else if (param > m_params[n])
+					{
+						n += (std::size(m_params) - n) / 2;
+					}
+				}
+
+				std::cout << splines[n - 1](param) << std::endl;
+			}
+		}
+		catch (const std::exception& e)
+		{
+			throw system_exception("System handle user inputs exception: " + std::string(e.what()));
+		}
+	}
+
 	void System::run()
 	{
 		try
@@ -100,33 +138,7 @@ namespace compmath
 				std::cout << spline << std::endl;
 			}
 
-			std::string input;
-
-			std::cout << "\nInput params to count values using spline (print 'exit' to exit): \n>> ";
-			for (std::cin >> input; input != "exit"; std::cout << ">> ", std::cin >> input)
-			{
-				auto param = std::stod(input);
-				if (param < m_params[0] || param > m_params.back())
-				{
-					std::cout << "Wrong param. Please, input values between " << m_params[0] << " and " << m_params.back() << std::endl;
-					continue;
-				}
-
-				auto n = std::size(m_params) / 2;
-				for (; !(param <= m_params[n] && param >= m_params[n - 1]);)
-				{
-					if (param < m_params[n - 1])
-					{
-						n -= (std::size(m_params) - n) / 2;
-					}
-					else if(param > m_params[n])
-					{
-						n += (std::size(m_params) - n) / 2;
-					}
-				}
-
-				std::cout << splines[n - 1](param) << std::endl;
-			}
+			handle_user_inputs(splines);
 		}
 		catch (const std::exception& e)
 		{

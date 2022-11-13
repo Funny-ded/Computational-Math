@@ -83,6 +83,10 @@ namespace compmath
 			static void load(const path_t&, json_t&);
 		};
 
+	private:
+
+		void handle_user_inputs(const std::vector< polynom_t >&) const;
+
 	public:
 
 		void run();
