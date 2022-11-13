@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\system">
+      <UniqueIdentifier>{89d814cb-f230-4854-b0b6-190a18fcff4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source">
+      <UniqueIdentifier>{1fca9114-21d7-48cf-b870-9f676b9b8075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\polynom">
+      <UniqueIdentifier>{229b1cc5-1b98-49c7-b7b2-f810644866dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\system">
+      <UniqueIdentifier>{cc873b55-6dd6-4d8b-b45d-bbb0acd30136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\system\config">
+      <UniqueIdentifier>{d3e7c589-1ba0-466d-b082-a2fdbec7369f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\utility">
+      <UniqueIdentifier>{59b4715c-3997-4ce9-a747-b53c72a14311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\utility\logger">
+      <UniqueIdentifier>{ce38f67a-e4a5-4720-b869-2bcfc72abd49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\interpolate">
+      <UniqueIdentifier>{7cf59a33-4329-42fd-925a-80d0492532a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\spline">
+      <UniqueIdentifier>{ab7f2727-c307-462f-9df5-dca3d58d7a8c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\system\system.cpp">
+      <Filter>Исходные файлы\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\utility\logger\logger.cpp">
+      <Filter>Исходные файлы\utility\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\source\interpolate\interpolate.cpp">
+      <Filter>Исходные файлы\source\interpolate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\source\spline\spline.cpp">
+      <Filter>Исходные файлы\source\spline</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\system\system.hpp">
+      <Filter>Исходные файлы\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\utility\logger\logger.hpp">
+      <Filter>Исходные файлы\utility\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\source\polynom\polynom.hpp">
+      <Filter>Исходные файлы\source\polynom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\source\interpolate\interpolate.hpp">
+      <Filter>Исходные файлы\source\interpolate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\source\spline\spline.hpp">
+      <Filter>Исходные файлы\source\spline</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\release\system\config\values.json">
+      <Filter>Файлы ресурсов\system\config</Filter>
+    </None>
+  </ItemGroup>
+</Project>
