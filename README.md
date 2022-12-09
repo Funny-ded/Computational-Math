@@ -166,3 +166,80 @@
 	- [logger.cpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_2/source/utility/logger/logger.cpp)
 	- [logger.hpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_2/source/utility/logger/logger.hpp)
 - [main.cpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_2/source/main.cpp) - основной файл программы
+
+## Обыкновенные дифференциальные уравнения
+
+### Лабораторная работа №3. Метод Рунге-Кутты решения задачи Коши для обыкновенных дифференциальных уравнений первого порядка.
+
+Лабораторная работа выполнена при помощи C++20 и представляет собой консольное приложение, решающее задачу Коши при помощи метода Эйлера с пересчётом для уравнения №5. Результат работы приложение выводится в консоли.
+
+#### Структура проекта
+
+```
+| release
+|──|log
+|  |── output.log - лог работы программы
+|
+|─── project.exe - исполняемый файл
+```
+
+Здесь:
+
+- log - папка с логом работы программы, создаётся автоматически при первом запуске (нет в репозитории)
+- output.log - лог работы программы
+- [project.exe](https://github.com/Funny-ded/Computational-Math/blob/master/lab_1/release/project.exe) - исполняемый файл
+
+#### Структура кода
+
+```
+|project - содержит дополнительные файлы, генерируемые MSVS
+|source - исходники проекта
+|───|source
+|   |───|cauchy_problem
+|		|───|diff_equation
+|		|	|─── diff_equation.cpp
+|		|	|─── diff_equation.hpp
+|		|
+|		|───|solver
+|		|	|───|butcher_table
+|		|	|	|─── butcher_table.hpp
+|		|	|
+|		|	|─── solver.cpp
+|		|	|─── solver.hpp
+|		|
+|		|─── cauchy_problem.cpp
+|		|─── cauchy_problem.hpp
+|
+|───|system
+|   |─── system.cpp
+|   |─── system.hpp
+|
+|───|utility
+|   |───|logger - содержит класс Logger, работающий с логгером программы
+|       |─── logger.cpp
+|       |─── logger.hpp
+|
+|─── main.cpp - основной файл
+```
+
+Здесь:
+
+- project - содержит дополнительные файлы, генерируемые MSVS
+- source - исходники проекта
+- cauchy_problem - представляет основной класс задачи Коши для некторого дифференциального уравнения
+	- [cauchy_problem.cpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_3/source/source/cauchy_problem/cauchy_problem.cpp)
+	- [cauchy_problem.hpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_3/source/source/cauchy_problem/cauchy_problem.hpp)
+- diff_equation - структура обыкновенного дифференциального уравнения
+	- [diff_equation.hpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_3/source/source/cauchy_problem/diff_equation/diff_equation.hpp)
+- solver - иерархия, базовый класс которой решает задачу Коши в общем виде. От него наследуется класс, решающий задачу при помощи метода Эйлера с пересчётом.
+	- [solver.cpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_3/source/source/cauchy_problem/solver/solver.cpp)
+	- [solver.hpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_3/source/source/cauchy_problem/solver/solver.hpp)
+- butcher_table - структура таблицы Бутчера
+	- [butcher_table.hpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_3/source/source/cauchy_problem/solver/butcher_table/butcher_table.hpp)
+- system - класс, отвечающий за запуск приложения и работу с доступными ресурсами и модулями.
+	- [system.cpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_3/source/system/system.cpp)
+	- [system.hpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_3/source/system/system.hpp)
+- logger - класс, работающий с логом программы
+	- [logger.cpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_3/source/utility/logger/logger.cpp)
+	- [logger.hpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_3/source/utility/logger/logger.hpp)
+- [main.cpp](https://github.com/Funny-ded/Computational-Math/blob/master/lab_3/source/main.cpp) - основной файл программы
