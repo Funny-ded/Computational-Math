@@ -4,9 +4,6 @@
 #include "system/system.hpp"
 #include "utility/logger/logger.hpp"
 
-#include "source/polynom/polynom.hpp"
-
-
 int main(int argc, char** argv)
 {
 	try
