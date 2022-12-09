@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\utility">
+      <UniqueIdentifier>{0d8f2d4e-6823-436f-896e-afcff08c83f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\utility\logger">
+      <UniqueIdentifier>{edcce666-4e6e-4c99-9d82-92948162ced6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\system">
+      <UniqueIdentifier>{86edf457-97d7-430e-9fae-725dc8c65f4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source">
+      <UniqueIdentifier>{47e12436-1d29-4f07-9853-aa525330f6ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\cauchy_problem">
+      <UniqueIdentifier>{b64a6846-a5c2-4643-b1c4-78ddc53f2791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\cauchy_problem\diff_equation">
+      <UniqueIdentifier>{1dd90c3e-53fa-469e-9e57-d8209797190b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\cauchy_problem\solver">
+      <UniqueIdentifier>{c64322f9-1e4f-4121-87b7-d7472af0c52f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\source\cauchy_problem\solver\butcher_table">
+      <UniqueIdentifier>{3bbf6c56-30bf-4503-8273-f024a50d8ec5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\utility\logger\logger.cpp">
+      <Filter>Исходные файлы\utility\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\system\system.cpp">
+      <Filter>Исходные файлы\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\source\cauchy_problem\solver\solver.cpp">
+      <Filter>Исходные файлы\source\cauchy_problem\solver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\source\cauchy_problem\cauchy_problem.cpp">
+      <Filter>Исходные файлы\source\cauchy_problem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\utility\logger\logger.hpp">
+      <Filter>Исходные файлы\utility\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\system\system.hpp">
+      <Filter>Исходные файлы\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\source\cauchy_problem\cauchy_problem.hpp">
+      <Filter>Исходные файлы\source\cauchy_problem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\source\cauchy_problem\diff_equation\diff_equation.hpp">
+      <Filter>Исходные файлы\source\cauchy_problem\diff_equation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\source\cauchy_problem\solver\solver.hpp">
+      <Filter>Исходные файлы\source\cauchy_problem\solver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\source\cauchy_problem\solver\butcher_table\butcher_table.hpp">
+      <Filter>Исходные файлы\source\cauchy_problem\solver\butcher_table</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
