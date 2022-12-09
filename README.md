@@ -196,19 +196,19 @@
 |source - исходники проекта
 |───|source
 |   |───|cauchy_problem
-|		|───|diff_equation
-|		|	|─── diff_equation.cpp
-|		|	|─── diff_equation.hpp
-|		|
-|		|───|solver
-|		|	|───|butcher_table
-|		|	|	|─── butcher_table.hpp
-|		|	|
-|		|	|─── solver.cpp
-|		|	|─── solver.hpp
-|		|
-|		|─── cauchy_problem.cpp
-|		|─── cauchy_problem.hpp
+|       |───|diff_equation
+|       |   |─── diff_equation.cpp
+|       |   |─── diff_equation.hpp
+|       |
+|       |───|solver
+|       |   |───|butcher_table
+|       |   |   |─── butcher_table.hpp
+|       |   |
+|       |   |─── solver.cpp
+|       |   |─── solver.hpp
+|       |
+|       |─── cauchy_problem.cpp
+|       |─── cauchy_problem.hpp
 |
 |───|system
 |   |─── system.cpp
